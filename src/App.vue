@@ -13,7 +13,7 @@
     </div>
 
     <div class="main-component">
-      <router-view> </router-view>
+      <router-view></router-view>
     </div>
 
     <div class="footer">
@@ -33,29 +33,28 @@ export default {
       is_auth: localStorage.getItem("isAuth") || false,
     };
   },
-
   methods: {
-init: function(){
-if(this.$route.name != "user"){
-let username = localStorage.getItem("current_username")
-this.$router.push({name: "user", params:{username:username}})
-}
-},
-getBalance: function(){
-if(this.$route.name != "user_balance"){
-let username = localStorage.getItem("current_username")
-this.$router.push({ name:"user_balance",
-params:{username:username}
-})
-}
-},
-},
+    init: function(){
+      if(this.$route.name != "user") {
+        let username = localStorage.getItem("current_username");
+        this.$router.push({ name: "user", params: {username:username} });
+    }
+  },
+  getBalance: function(){
+    if(this.$route.name != "user_balance"){
+      let username = localStorage.getItem("current_username")
+      this.$router.push({ name:"user_balance", params:{username:username} });
+      }
+  },
 
-  beforeCreate: function(){
-localStorage.setItem('current_username', 'camilo24')
-localStorage.setItem('isAuth', true)
-this.$router.push({name:"user",params:{username:'camilo24'}})
-}
+},
+beforeCreate: function(){
+  localStorage.setItem("current_username", "camilo24");
+  localStorage.setItem("isAuth", true);
+
+  this.$router.push({name: "user", params: { username: "camilo24"} });
+  }
+};
 </script>
 
 <style>
