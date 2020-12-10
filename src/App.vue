@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div class="header">
-      <img src=".\assets\logo_carb.png" alt="" />
       <h1>Banco UN</h1>
       <nav>
         <button v-on:click="init" v-if="is_auth">Inicio</button>
