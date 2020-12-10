@@ -14,8 +14,9 @@
         data: function (){
             return {
             username: "",
-            balance: 0
-            }
+            balance: 0,
+            };
+            },
             created: function(){
             this.username = this.$route.params.username
             let self = this
@@ -26,10 +27,9 @@
             .catch((error) => {
             alert("ERROR Servidor");
             });
-        }
-    }
+        },
+    };
 </script>
-
 <style>
 #UserBalance {
   width: 100%;
