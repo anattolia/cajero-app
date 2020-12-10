@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div class="header">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <img src=".\assets\logo_carb.png" alt="" />
       <h1>Banco UN</h1>
       <nav>
