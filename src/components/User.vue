@@ -1,13 +1,5 @@
 <template>
   <div id="User">
-    <!-- El formulario para acceder: -->
-    <!-- <form id="form1" onsubmit="getFormvalue()">
-        "Usuario: "<br>
-        <input type="text" name="usuario" value><br><br>
-         "Contraseña: "<br>
-        <input type="text" name="contrasena" value><br><br>
-        <input type="submit" value="Enviar">
-      </form> -->
     <h2>
       Hola <span> {{ username }}, </span> ¡Bienvenido!
     </h2>

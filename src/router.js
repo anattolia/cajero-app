@@ -7,22 +7,22 @@ const router = new vueRouter({
     mode: 'history',
     base: __dirname,
     routes: [
-    {
-    path: '/',
-    name: "root",
-    component: App
-    },
+        {
+            path: '/',
+            name: "root",
+            component: App
+        },
 
-    {
+
         path: '/user/:username',
         name: "user",
         component: User
-        },
-        {
+},
+    {
         path: '/user/balance/:username',
         name: "user_balance",
         component: UserBalance
-        },
-        ]
-        })
-        export default router
+    },
+]
+})
+export default router
