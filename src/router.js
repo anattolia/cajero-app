@@ -4,15 +4,15 @@ import UserBalance from './components/UserBalance'
 import App from './App'
 
 const router = new vueRouter({
-    mode: 'history',
-    base: __dirname,
-    routes: [
-        {
-            path: '/',
-            name: "root",
-            component: App
-        },
-        {
+        mode: 'history',
+        base: __dirname,
+        routes: [
+            {
+                path: '/',
+                name: "root",
+                component: App
+            },
+        {   
             path: '/user/:username',
             name: "user",
             component: User
